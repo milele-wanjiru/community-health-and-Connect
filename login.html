@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Community Health and Connect</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjMDA3N0NCIi8+CjxwYXRoIGQ9Ik0zNSAxM0g0NVYzN0gzNVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01MCAxM0g2MFYzN0g1MFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02NSAxM0g3NVYzN0g2NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAxM0g4NVYyMkg3NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAzMEg4NVYzN0g3NVYzMFoiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjgwIiBjeT0iMjYiIHI9IjQiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMDAgMTNIMTI1VjE4SDEwNVYyM0gxMjNWMjhIMTA1VjM3SDEwMFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMzUgMTNIMTU1QzE1OC44NjYgMTMgMTYyIDE2LjEzNDEgMTYyIDIwVjMwQzE2MiAzMy44NjU5IDE1OC44NjYgMzcgMTU1IDM3SDEzNVYxM1pNMTU1IDMyQzE1Ni42NTcgMzIgMTU4IDMwLjY1NjkgMTU4IDI5VjIxQzE1OCAxOS4zNDMxIDE1Ni42NTcgMTggMTU1IDE4SDE0MFYzMkgxNTVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Community Health and Connect Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doctors.html" class="nav-link">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="register.html" class="btn-register">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your account</p>
+            </div>
+            
+            <div class="login-body">
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <div class="input-icon">📧</div>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <div class="input-icon">🔒</div>
+                        <div class="error-message" id="passwordError">Please enter your password</div>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Sign In
+                    </button>
+                </form>
+                
+                <div class="form-divider">
+                    <span>Or continue with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <span class="social-icon">🔍</span>
+                        Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <span class="social-icon">👤</span>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="demo-accounts">
+                    <h4>Demo Accounts (For Testing)</h4>
+                    <div class="demo-account" data-email="patient@demo.com" data-password="demo123">
+                        <div>
+                            <div class="demo-role">Patient Account</div>
+                            <div class="demo-credentials">patient@demo.com / demo123</div>
+                        </div>
+                        <button class="quick-fill">Quick Fill</button>
+                    </div>
+                    <div class="demo-account" data-email="doctor@demo.com" data-password="demo123">
+                        <div>
+                            <div class="demo-role">Doctor Account</div>
+                            <div class="demo-credentials">doctor@demo.com / demo123</div>
+                        </div>
+                        <button class="quick-fill">Quick Fill</button>
+                    </div>
+                </div>
+                
+                <div class="security-notice">
+                    🔒 This is a secure login. Your information is protected.
+                </div>
+                
+                <div class="register-link">
+                    Don't have an account? <a href="register.html">Create one here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // Form Validation and Handling
+        const loginForm = document.getElementById('loginForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Demo account quick fill
+        const demoAccounts = document.querySelectorAll('.demo-account');
+        demoAccounts.forEach(account => {
+            const quickFillBtn = account.querySelector('.quick-fill');
+            quickFillBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const email = account.getAttribute('data-email');
+                const password = account.getAttribute('data-password');
+                
+                document.getElementById('email').value = email;
+                document.getElementById('password').value = password;
+                
+                // Validate fields
+                validateField(document.getElementById('email'), validators.email);
+                validateField(document.getElementById('password'), validators.password);
+                
+                // Show success state
+                document.getElementById('email').classList.add('success');
+                document.getElementById('password').classList.add('success');
+                
+                // Focus on submit button
+                submitBtn.focus();
+            });
+            
+            // Also allow clicking the entire account area
+            account.addEventListener('click', () => {
+                quickFillBtn.click();
+            });
+        });
+
+        // Real-time validation
+        function validateField(field, validator) {
+            const errorElement = document.getElementById(field.id + 'Error');
+            const isValid = validator(field.value);
+
+            if (!isValid && field.value.length > 0) {
+                field.classList.add('error');
+                field.classList.remove('success');
+                errorElement.style.display = 'block';
+            } else if (isValid && field.value.length > 0) {
+                field.classList.remove('error');
+                field.classList.add('success');
+                errorElement.style.display = 'none';
+            } else {
+                field.classList.remove('error', 'success');
+                errorElement.style.display = 'none';
+            }
+
+            return isValid;
+        }
+
+        // Validators
+        const validators = {
+            email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+            password: (value) => value.length >= 6
+        };
+
+        // Add event listeners for real-time validation
+        Object.keys(validators).forEach(fieldName => {
+            const field = document.getElementById(fieldName);
+            if (field) {
+                field.addEventListener('blur', () => validateField(field, validators[fieldName]));
+                field.addEventListener('input', () => {
+                    if (field.classList.contains('error')) {
+                        validateField(field, validators[fieldName]);
+                    }
+                });
+            }
+        });
+
+        // Form submission
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+
+            // Validate all fields
+            Object.keys(validators).forEach(fieldName => {
+                const field = document.getElementById(fieldName);
+                if (field && !validateField(field, validators[fieldName])) {
+                    isValid = false;
+                }
+            });
+
+            if (isValid) {
+                // Simulate form submission
+                submitBtn.disabled = true;
+                submitBtn.classList.add('loading');
+                submitBtn.textContent = 'Signing In...';
+
+                // Get form data
+                const formData = {
+                    email: document.getElementById('email').value,
+                    password: document.getElementById('password').value,
+                    remember: document.getElementById('remember').checked
+                };
+
+                // Simulate API call with different responses based on demo accounts
+                setTimeout(() => {
+                    if (formData.email === 'patient@demo.com' && formData.password === 'demo123') {
+                        // Successful patient login
+                        window.location.href = 'patient-dashboard.html';
+                    } else if (formData.email === 'doctor@demo.com' && formData.password === 'demo123') {
+                        // Successful doctor login
+                        window.location.href = 'doctor-dashboard.html';
+                    } else {
+                        // Failed login
+                        alert('Invalid email or password. Please try again.');
+                        
+                        // Reset button
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('loading');
+                        submitBtn.textContent = 'Sign In';
+                        
+                        // Shake animation for error
+                        loginForm.style.animation = 'shake 0.5s ease-in-out';
+                        setTimeout(() => {
+                            loginForm.style.animation = '';
+                        }, 500);
+                    }
+                }, 2000);
+            } else {
+                // Scroll to first error
+                const firstError = document.querySelector('.error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstError.focus();
+                }
+            }
+        });
+
+        // Social login buttons
+        document.querySelectorAll('.social-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const socialType = this.classList.contains('google') ? 'Google' : 'Facebook';
+                alert(`${socialType} login would be integrated here. This is a demo.`);
+            });
+        });
+
+        // Forgot password link
+        document.querySelector('.forgot-password').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Password reset functionality would be implemented here. This is a demo.');
+        });
+
+        // Card animation on load
+        const loginCard = document.querySelector('.login-card');
+        loginCard.style.opacity = '0';
+        loginCard.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+            loginCard.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            loginCard.style.opacity = '1';
+            loginCard.style.transform = 'translateY(0)';
+        }, 100);
+
+        // Add shake animation for errors
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Auto-focus on email field
+        setTimeout(() => {
+            document.getElementById('email').focus();
+        }, 600);
+    </script>
+</body>
+</html>

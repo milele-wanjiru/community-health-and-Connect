@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Community Health and Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjMDA3N0NCIi8+CjxwYXRoIGQ9Ik0zNSAxM0g0NVYzN0gzNVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01MCAxM0g2MFYzN0g1MFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02NSAxM0g3NVYzN0g2NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAxM0g4NVYyMkg3NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAzMEg4NVYzN0g3NVYzMFoiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjgwIiBjeT0iMjYiIHI9IjQiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMDAgMTNIMTI1VjE4SDEwNVYyM0gxMjNWMjhIMTA1VjM3SDEwMFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMzUgMTNIMTU1QzE1OC44NjYgMTMgMTYyIDE2LjEzNDEgMTYyIDIwVjMwQzE2MiAzMy44NjU5IDE1OC44NjYgMzcgMTU1IDM3SDEzNVYxM1pNMTU1IDMyQzE1Ni42NTcgMzIgMTU4IDMwLjY1NjkgMTU4IDI5VjIxQzE1OCAxOS4zNDMxIDE1Ni42NTcgMTggMTU1IDE4SDE0MFYzMkgxNTVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Community Health and Connect Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doctors.html" class="nav-link active">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="register.html" class="btn-register">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Doctors Hero Section -->
+    <section class="doctors-hero">
+        <div class="container">
+            <h1>Meet Our Medical Experts</h1>
+            <p>Our team of board-certified physicians and specialists are dedicated to providing you with exceptional healthcare.</p>
+        </div>
+    </section>
+
+    <!-- Main Doctors Content -->
+    <section class="doctors-main">
+        <div class="container">
+            <!-- Department Filter -->
+            <div class="department-filter">
+                <h2>Find Your Specialist</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-department="all">All Doctors</button>
+                    <button class="filter-btn" data-department="cardiology">Cardiology</button>
+                    <button class="filter-btn" data-department="neurology">Neurology</button>
+                    <button class="filter-btn" data-department="orthopedics">Orthopedics</button>
+                    <button class="filter-btn" data-department="pediatrics">Pediatrics</button>
+                    <button class="filter-btn" data-department="surgery">Surgery</button>
+                    <button class="filter-btn" data-department="emergency">Emergency</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="doctorSearch" placeholder="Search doctors by name or specialty...">
+                </div>
+            </div>
+
+            <!-- Doctors Grid -->
+            <div class="doctors-grid" id="doctorsContainer">
+                <!-- Cardiology Doctors -->
+                <div class="doctor-card" data-department="cardiology">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Sarah Chen">
+                        <div class="doctor-badge">Cardiology</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Chen</h3>
+                        <span class="doctor-specialty">Chief of Cardiology</span>
+                        <p class="doctor-education">MD, Harvard Medical School • 15+ years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Interventional Cardiology</li>
+                                <li>Heart Failure</li>
+                                <li>Cardiac Imaging</li>
+                                <li>Preventive Care</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="doctor-card" data-department="cardiology">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Michael Rodriguez">
+                        <div class="doctor-badge">Cardiology</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Rodriguez</h3>
+                        <span class="doctor-specialty">Cardiac Electrophysiologist</span>
+                        <p class="doctor-education">MD, Johns Hopkins University • 12 years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Cardiac Rhythm</li>
+                                <li>Pacemakers</li>
+                                <li>Ablation Therapy</li>
+                                <li>Arrhythmia</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neurology Doctors -->
+                <div class="doctor-card" data-department="neurology">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. James Wilson">
+                        <div class="doctor-badge">Neurology</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. James Wilson</h3>
+                        <span class="doctor-specialty">Neurology Director</span>
+                        <p class="doctor-education">MD, Stanford University • 20+ years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Stroke Treatment</li>
+                                <li>Epilepsy</li>
+                                <li>Multiple Sclerosis</li>
+                                <li>Neuromuscular</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orthopedics Doctors -->
+                <div class="doctor-card" data-department="orthopedics">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Emily Parker">
+                        <div class="doctor-badge">Orthopedics</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Parker</h3>
+                        <span class="doctor-specialty">Orthopedic Surgeon</span>
+                        <p class="doctor-education">MD, Mayo Clinic • 14 years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Joint Replacement</li>
+                                <li>Sports Medicine</li>
+                                <li>Arthroscopic Surgery</li>
+                                <li>Fracture Care</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatrics Doctors -->
+                <div class="doctor-card" data-department="pediatrics">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Maria Gonzalez">
+                        <div class="doctor-badge">Pediatrics</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Maria Gonzalez</h3>
+                        <span class="doctor-specialty">Pediatric Specialist</span>
+                        <p class="doctor-education">MD, Boston Children's Hospital • 18 years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Child Development</li>
+                                <li>Vaccinations</li>
+                                <li>Childhood Asthma</li>
+                                <li>Well-child Care</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surgery Doctors -->
+                <div class="doctor-card" data-department="surgery">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Robert Kim">
+                        <div class="doctor-badge">Surgery</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Kim</h3>
+                        <span class="doctor-specialty">General Surgeon</span>
+                        <p class="doctor-education">MD, Cleveland Clinic • 16 years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Minimally Invasive</li>
+                                <li>Gastrointestinal</li>
+                                <li>Trauma Surgery</li>
+                                <li>Surgical Oncology</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Doctors -->
+                <div class="doctor-card" data-department="emergency">
+                    <div class="doctor-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRTVFREVGIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTE0MCAyMjBDMTQwIDIwMCAxNjAgMTgwIDE4MCAxODBIMjIwQzI0MCAxODAgMjYwIDIwMCAyNjAgMjIwVjMwMEgxNDBWMjIwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Dr. Lisa Thompson">
+                        <div class="doctor-badge">Emergency</div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Lisa Thompson</h3>
+                        <span class="doctor-specialty">Emergency Medicine</span>
+                        <p class="doctor-education">MD, University of Chicago • 11 years experience</p>
+                        <div class="doctor-expertise">
+                            <h4>Areas of Expertise:</h4>
+                            <ul class="expertise-list">
+                                <li>Trauma Care</li>
+                                <li>Critical Care</li>
+                                <li>Emergency Procedures</li>
+                                <li>Toxicology</li>
+                            </ul>
+                        </div>
+                        <div class="doctor-actions">
+                            <a href="#" class="btn-primary btn-small">Book Appointment</a>
+                            <a href="#" class="btn-outline btn-small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Doctors Message (Hidden by default) -->
+            <div class="no-doctors" id="noDoctorsMessage" style="display: none;">
+                <h3>No Doctors Found</h3>
+                <p>We couldn't find any doctors matching your search criteria. Please try a different department or search term.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Board Certified Doctors</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Medical Specialties</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15</h3>
+                    <p>Years Average Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Patient Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA -->
+    <section class="appointment-cta">
+        <div class="container">
+            <h2>Ready to Book Your Appointment?</h2>
+            <p>Our team of experienced doctors is here to provide you with the best medical care. Schedule your appointment today and take the first step towards better health.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-primary">Book Appointment Now</a>
+                <a href="tel:+1234567890" class="btn-secondary">Call: (123) 456-7890</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMjUgMTBIMzVWMzRIMjVWMTAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTQwIDEwSDUwVjM0SDQwVjEwIiBmaWxsPSIjMDA3N0NDIi8+CjxwYXRoIGQ9Ik01NSAxMEg2NVYzNEg1NVYxMCIgZmlsbD0iIzAwNzdDQyIvPgo8cGF0aCBkPSJNNjUgMTBINzVWMjJINjVWMTAiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTY1IDI3SDc1VjM0SDY1VjI3IiBmaWxsPSIjMDA3N0NDIi8+CjxjaXJjbGUgY3g9IjcwIiBjeT0iMjAiIHI9IjMiIGZpbGw9IiMwMDc3Q0MiLz4KPHBhdGggZD0iTTkwIDEwSDEwNVYxNUg5NVYyMEgxMDVWMjVIOThWMzRIMTQwVjEwSDkwWiIgZmlsbD0iIzAwNzdDQyIvPgo8L3N2Zz4K" alt="Community Health and Connect">
+                    <p>Quality Healthcare for Everyone</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="doctors.html">Doctors</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Emergency Care</a></li>
+                            <li><a href="#">Surgery</a></li>
+                            <li><a href="#">Maternity</a></li>
+                            <li><a href="#">Pediatrics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>123 Health Street</li>
+                            <li>Medical City, MC 12345</li>
+                            <li>Phone: (123) 456-7890</li>
+                            <li>Email: info@communityhealth.org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Community Health and Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // Doctor Filtering System
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const doctorCards = document.querySelectorAll('.doctor-card');
+        const searchInput = document.getElementById('doctorSearch');
+        const noDoctorsMessage = document.getElementById('noDoctorsMessage');
+
+        // Filter by department
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const department = button.getAttribute('data-department');
+                filterDoctors(department, searchInput.value);
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', () => {
+            const activeDepartment = document.querySelector('.filter-btn.active').getAttribute('data-department');
+            filterDoctors(activeDepartment, searchInput.value);
+        });
+
+        function filterDoctors(department, searchTerm) {
+            let visibleCount = 0;
+            
+            doctorCards.forEach(card => {
+                const cardDepartment = card.getAttribute('data-department');
+                const doctorName = card.querySelector('h3').textContent.toLowerCase();
+                const doctorSpecialty = card.querySelector('.doctor-specialty').textContent.toLowerCase();
+                const doctorExpertise = card.querySelector('.doctor-expertise').textContent.toLowerCase();
+                
+                const matchesDepartment = department === 'all' || cardDepartment === department;
+                const matchesSearch = !searchTerm || 
+                    doctorName.includes(searchTerm.toLowerCase()) ||
+                    doctorSpecialty.includes(searchTerm.toLowerCase()) ||
+                    doctorExpertise.includes(searchTerm.toLowerCase());
+                
+                if (matchesDepartment && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                    
+                    // Add animation
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no doctors message
+            if (visibleCount === 0) {
+                noDoctorsMessage.style.display = 'block';
+            } else {
+                noDoctorsMessage.style.display = 'none';
+            }
+        }
+
+        // Doctor card animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initial animation for doctor cards
+        doctorCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Animate statistics
+        const statItems = document.querySelectorAll('.stat-item h3');
+        const statsSection = document.querySelector('.stats-section');
+        
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    statItems.forEach(stat => {
+                        const target = parseInt(stat.textContent);
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                current = target;
+                                clearInterval(timer);
+                            }
+                            stat.textContent = Math.floor(current) + (stat.textContent.includes('+') ? '+' : '');
+                        }, 50);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        statsObserver.observe(statsSection);
+    </script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Community Health and Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to register page */
+   
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjMDA3N0NCIi8+CjxwYXRoIGQ9Ik0zNSAxM0g0NVYzN0gzNVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01MCAxM0g2MFYzN0g1MFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02NSAxM0g3NVYzN0g2NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAxM0g4NVYyMkg3NVYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03NSAzMEg4NVYzN0g3NVYzMFoiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjgwIiBjeT0iMjYiIHI9IjQiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMDAgMTNIMTI1VjE4SDEwNVYyM0gxMjNWMjhIMTA1VjM3SDEwMFYxM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xMzUgMTNIMTU1QzE1OC44NjYgMTMgMTYyIDE2LjEzNDEgMTYyIDIwVjMwQzE2MiAzMy44NjU5IDE1OC44NjYgMzcgMTU1IDM3SDEzNVYxM1pNMTU1IDMyQzE1Ni42NTcgMzIgMTU4IDMwLjY1NjkgMTU4IDI5VjIxQzE1OCAxOS4zNDMxIDE1Ni42NTcgMTggMTU1IDE4SDE0MFYzMkgxNTVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Community Health and Connect Logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="doctors.html" class="nav-link">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="register.html" class="btn-register">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Container -->
+    <div class="register-container">
+        <div class="register-card">
+            <div class="register-header">
+                <h1>Create Your Account</h1>
+                <p>Join Community Health and Connect today</p>
+            </div>
+            
+            <div class="register-body">
+                <div class="success-message" id="successMessage">
+                    <strong>Registration Successful!</strong> Please check your email to verify your account.
+                </div>
+
+                <form id="registerForm" class="register-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div class="error-message" id="firstNameError">Please enter your first name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div class="error-message" id="lastNameError">Please enter your last name</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <div class="error-message" id="dobError">Please enter your date of birth</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="password-strength">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <div class="strength-text" id="strengthText">Password strength</div>
+                        <div class="error-message" id="passwordError">Password must be at least 8 characters with uppercase, lowercase, number, and special character</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <div class="error-message" id="confirmPasswordError">Passwords do not match</div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *
+                        </label>
+                    </div>
+                    <div class="error-message" id="termsError">You must agree to the terms and conditions</div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">
+                            Send me health tips, news, and updates (optional)
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Create Account
+                    </button>
+                </form>
+                
+                <div class="login-link">
+                    Already have an account? <a href="login.html">Sign in here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // Form Validation and Handling
+        const registerForm = document.getElementById('registerForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        // Password strength indicator
+        const passwordInput = document.getElementById('password');
+        const strengthBar = document.getElementById('strengthBar');
+        const strengthText = document.getElementById('strengthText');
+
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            let strength = 0;
+            let text = 'Password strength';
+
+            // Check password strength
+            if (password.length >= 8) strength++;
+            if (password.match(/[a-z]/)) strength++;
+            if (password.match(/[A-Z]/)) strength++;
+            if (password.match(/[0-9]/)) strength++;
+            if (password.match(/[^a-zA-Z0-9]/)) strength++;
+
+            // Update strength bar and text
+            strengthBar.className = 'strength-bar';
+            if (strength > 0) {
+                if (strength <= 2) {
+                    strengthBar.classList.add('strength-weak');
+                    text = 'Weak password';
+                } else if (strength <= 4) {
+                    strengthBar.classList.add('strength-medium');
+                    text = 'Medium password';
+                } else {
+                    strengthBar.classList.add('strength-strong');
+                    text = 'Strong password';
+                }
+            }
+            strengthText.textContent = text;
+        });
+
+        // Phone number formatting
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                value = value.match(/.{1,3}/g).join('-');
+                if (value.length > 12) value = value.substring(0, 12);
+            }
+            e.target.value = value;
+        });
+
+        // Real-time validation
+        function validateField(field, validator) {
+            const errorElement = document.getElementById(field.id + 'Error');
+            const isValid = validator(field.value);
+
+            if (!isValid && field.value.length > 0) {
+                field.classList.add('error');
+                field.classList.remove('success');
+                errorElement.style.display = 'block';
+            } else if (isValid && field.value.length > 0) {
+                field.classList.remove('error');
+                field.classList.add('success');
+                errorElement.style.display = 'none';
+            } else {
+                field.classList.remove('error', 'success');
+                errorElement.style.display = 'none';
+            }
+
+            return isValid;
+        }
+
+        // Validators
+        const validators = {
+            firstName: (value) => value.length >= 2,
+            lastName: (value) => value.length >= 2,
+            email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+            phone: (value) => value.replace(/\D/g, '').length >= 10,
+            dob: (value) => {
+                const dob = new Date(value);
+                const today = new Date();
+                const age = today.getFullYear() - dob.getFullYear();
+                return age >= 13 && age <= 120;
+            },
+            password: (value) => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(value),
+            confirmPassword: (value) => value === passwordInput.value
+        };
+
+        // Add event listeners for real-time validation
+        Object.keys(validators).forEach(fieldName => {
+            const field = document.getElementById(fieldName);
+            if (field) {
+                field.addEventListener('blur', () => validateField(field, validators[fieldName]));
+                field.addEventListener('input', () => {
+                    if (field.classList.contains('error')) {
+                        validateField(field, validators[fieldName]);
+                    }
+                });
+            }
+        });
+
+        // Terms checkbox validation
+        const termsCheckbox = document.getElementById('terms');
+        const termsError = document.getElementById('termsError');
+
+        termsCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                termsError.style.display = 'none';
+            } else if (document.activeElement === this) {
+                termsError.style.display = 'block';
+            }
+        });
+
+        // Form submission
+        registerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+
+            // Validate all fields
+            Object.keys(validators).forEach(fieldName => {
+                const field = document.getElementById(fieldName);
+                if (field && !validateField(field, validators[fieldName])) {
+                    isValid = false;
+                }
+            });
+
+            // Validate terms
+            if (!termsCheckbox.checked) {
+                termsError.style.display = 'block';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Simulate form submission
+                submitBtn.disabled = true;
+                submitBtn.classList.add('loading');
+                submitBtn.textContent = 'Creating Account...';
+
+                // Simulate API call
+                setTimeout(() => {
+                    successMessage.style.display = 'block';
+                    registerForm.reset();
+                    strengthBar.className = 'strength-bar';
+                    strengthText.textContent = 'Password strength';
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    
+                    // Reset button
+                    setTimeout(() => {
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('loading');
+                        submitBtn.textContent = 'Create Account';
+                    }, 2000);
+                }, 2000);
+            } else {
+                // Scroll to first error
+                const firstError = document.querySelector('.error');
+                if (firstError) {
+                    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstError.focus();
+                }
+            }
+        });
+
+        // Date of birth max date (13 years old minimum)
+        const dobInput = document.getElementById('dob');
+        const today = new Date();
+        const maxDate = new Date(today.getFullYear() - 13, today.getMonth(), today.getDate());
+        dobInput.max = maxDate.toISOString().split('T')[0];
+
+        // Card animation on load
+        const registerCard = document.querySelector('.register-card');
+        registerCard.style.opacity = '0';
+        registerCard.style.transform = 'translateY(30px)';
+        
+        setTimeout(() => {
+            registerCard.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            registerCard.style.opacity = '1';
+            registerCard.style.transform = 'translateY(0)';
+        }, 100);
+    </script>
+</body>
+</html>
